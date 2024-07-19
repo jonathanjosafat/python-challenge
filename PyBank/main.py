@@ -60,7 +60,7 @@ f'Greatest Decrease in Profits: {greatest_decrease_date} (${greatest_decrease})\
 print(financial_analysis)
 
 #export to txt file
-output_file = 'financial_analysis.txt'
+output_file = os.path.join("analysis", "financial_analysis.txt")
 with open(output_file, 'w') as txt_file:
     txt_file.write(financial_analysis)
 
